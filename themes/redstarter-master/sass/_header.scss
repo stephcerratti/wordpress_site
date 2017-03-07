@@ -1,0 +1,132 @@
+.uppercase {
+	text-transform: uppercase;
+}
+
+.white-text {
+	color: white;
+}
+
+.orange-text {
+	color: #d99054;
+}
+
+.green-text a {
+	color: #248A83;
+}
+
+.light-grey-text {
+	color: #a1a1a1;
+}
+
+.grey-text{
+	color: #808080;
+
+}
+
+.font-novecento {
+	font-family: 'novecento';
+}
+
+
+.home-banner {
+	background: url(../../images/logos/inhabitent-logo-full.svg) center no-repeat, linear-gradient(rgba(0,0,0,.3) 100%, transparent), url(../../images/home-hero.jpg) no-repeat;
+	background-size: 25%, cover, cover;
+	height: 80vh;
+}
+
+.about-banner {
+	background: linear-gradient(rgba(0,0,0,.3) 100%, transparent), url(../../images/about-hero.jpg) no-repeat bottom;
+	background-size: cover;
+	height: 80vh;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	// position: fixed;
+}
+
+.nav-items a {
+	color: $color__nav-link;
+}
+
+.nav-items a:hover {
+	color: $color__nav-hover;
+}
+
+.home-logo {
+	margin-left: 30px;
+	height: 35px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	padding: 3px;
+}
+
+.main-logo {
+	margin: 0 auto;
+}
+
+.main-navigation {
+	margin-right: 40px;
+}
+
+.top-search-menu .search-submit{
+  display: none;
+}
+
+.top-search-menu label{
+  position: relative;
+}
+
+.top-search-menu label:before{
+  font-family: FontAwesome;
+  content: '\f002';
+  display: inline-block;
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 5px;
+}
+
+.top-search-menu .search-field{
+  height: 26px;
+  padding: 3px 5px 3px 23px;
+  font-weight: normal;
+}
+
+.top-search-menu label:before{
+ color: #fff;
+}  
+
+.top-search-menu.input-expanded label:before{
+ color: #333;
+}  
+
+.top-search-menu input{
+  opacity: 0;
+  width: 0;
+}
+
+.top-search-menu.input-expanded input{
+  opacity: 1;
+  width: 140px;
+}
+
+.about-title {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 20%;
+}
+
+.page-template-contact .navbar {
+	
+}

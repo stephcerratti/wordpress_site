@@ -1,0 +1,46 @@
+.uppercase {
+	text-transform: uppercase;
+}
+
+.white-text {
+	color: white;
+}
+
+.orange-text {
+	color: #d99054;
+}
+
+.font-novecento {
+	font-family: 'novecento';
+}
+
+.footer-background {
+	background: url(../../images/dark-wood.png);
+	height: 60vh;
+}
+
+.footer-flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-child {
+	margin: 50px 20px;
+}
+
+.footer-logo {
+	height: 45%;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.footer-logo {
+	height: 7vh;
+	margin-right: 30px;
+}
+
+.bold {
+	font-weight: bold;
+}
