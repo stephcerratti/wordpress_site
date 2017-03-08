@@ -1,0 +1,37 @@
+
+.archive {
+	header {
+		flex-basis: 100%;
+		justify-content: center;
+	}
+	.wp-post-image {
+	height: 200px;
+	width: 200px;
+	}
+	#main {
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 90%;
+		margin: 0 auto;
+	}
+	&.post-type-archive-product {
+		article {
+			flex-basis: 23%;
+		}
+	}
+	&.post-type-archive-adventure {
+		article {
+			flex-basis: 50%;
+		}
+	}
+}
+
+.product-info-box {
+	border: 1px solid grey;
+	border-top: 5px solid grey;
+	display: flex;
+	justify-content: space-between;
+}
+
+

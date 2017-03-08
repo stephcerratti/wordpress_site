@@ -107,3 +107,18 @@ function theme_slug_widgets_init() {
     'after_title'   => '</h2>',
     ) );
 }
+
+add_action("pre_get_posts", "change_posts_per_page_archive");
+function change_posts_per_page_archive($query) {
+    if ($query->is_main_query() && !is_admin() ) {
+        if ( $query->is_archive('product')) {
+            $query->set( 'posts_per_page', 16 );
+        }
+        elseif ( $query->is_archive('adventure')  ) {
+            $query->set( 'posts_per_page', 4);
+        }
+        elseif ( $query->is_archive('journal') ) {
+            $query->set( 'posts_per_page', 5);
+        };
+    }    
+}
