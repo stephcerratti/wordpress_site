@@ -1,4 +1,4 @@
-<h1> this is taxonomy.php </h1>
+<!-- <h1> this is taxonomy.php </h1> -->
 
 <?php
 

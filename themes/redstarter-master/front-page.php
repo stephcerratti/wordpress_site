@@ -55,7 +55,7 @@ $terms = get_terms(array("ProductType")); ?>
 					<span class="post-date light-grey-text"><?php echo get_the_date() ?> / </span>
 					<span class="comments light-grey-text"><?php echo get_comments_number();?> Comments</span>
 					<?php the_title( sprintf( '<h3 class="green-text uppercase entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-					<button class= "read-more uppercase light-grey-text">Read Entry</button>
+					<a href="<?php echo get_permalink()?>"><button class= "read-more uppercase light-grey-text">Read Entry</button></a>
 				</div>
 
 			<?php endif; ?>
