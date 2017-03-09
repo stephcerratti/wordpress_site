@@ -4,10 +4,12 @@
 		<header class="entry-header">
 				
 				<?php if ( has_post_thumbnail() ) : ?>
+					<a href="<?php echo get_permalink()?>">
 					<div class="product-image">
-
-					<?php ( sprintf( '<a href="%s" rel="bookmark">'.esc_url( get_permalink() ) ) ); the_post_thumbnail( 'large' );."</a>" ?>
+					 <?php the_post_thumbnail( 'small' ); ?>
 					</div>
+					</a>
+
 				<?php endif; ?>
 			
 			<div class="product-info-box">

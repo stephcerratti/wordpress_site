@@ -86,7 +86,7 @@ function get_post_type_arg($tax_arg) {
     }
 
     function create_taxonomy() {
-        $tax_values = array("Product Type");
+        $tax_values = array("ProductType");
     foreach ($tax_values as $tax_value) {
         $tax_get = get_post_type_arg($tax_value);
 
@@ -122,3 +122,13 @@ function change_posts_per_page_archive($query) {
         };
     }    
 }
+
+function my_acf_google_map_api( $api ){
+    
+    $api['key'] = 'xxx';
+    
+    return $api;
+    
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

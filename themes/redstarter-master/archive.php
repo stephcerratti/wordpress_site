@@ -1,4 +1,4 @@
-<h1> this is archive.php</h1>
+<!-- <h1> this is archive.php</h1> -->
 <?php
 /**
  * The template for displaying archive pages.
@@ -15,13 +15,9 @@ get_header(); ?>
 
 			<?php get_template_part("template-parts/content","header"); ?>
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					// echo "<h1> I am post type of: ".get_post_type()."</h1>";
-					get_template_part( 'template-parts/content', get_post_type() );
-				?>
+				<?php get_template_part( 'template-parts/content', get_post_type() ); ?>
 
 			<?php endwhile; ?>
 

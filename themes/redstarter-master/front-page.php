@@ -14,16 +14,18 @@ get_header(); ?>
 // $tax = get_terms(array("Product Type"));
 // 	echo "<pre>"; print_r($tax); echo"</pre>";
 
-$terms = get_terms(array("Product Type")); ?>
+$terms = get_terms(array("ProductType")); ?>
 
 	<div class="shop-container">
 		<?php foreach ($terms as $term) { ?>
 		<div class="shop-category">
 			<img class="shop-image" alt="<?php echo $term -> name ?> Logo" src="<?php echo get_bloginfo("stylesheet_directory")?>/images/product-type-icons/<?php echo $term -> name?>.svg">
 			<p><?php echo $term -> description ?> </p>
-			<button type="button" class="shop-button white-text uppercase"><?php echo $term -> name ?></button>
+			<a href="<?php echo get_term_link($term);?>">
+				<button type="button" class="shop-button white-text uppercase"><?php echo $term -> name ?></button>
+			</a>
 		</div>
-	<?php } ?>
+		<?php } ?>
 	</div>
 
 <!-- ********************* JOURNAL ************************************** -->
@@ -98,6 +100,6 @@ $terms = get_terms(array("Product Type")); ?>
 	</article>
 	<?php endwhile; ?>
 </div>
-<a hr<button class="adventure-read-more">More Adventures</button>
+<a href="http://localhost:8888/stephanie_site/Adventure"><button class="adventure-read-more">More Adventures</button></a>
 
 <?php get_footer(); ?>

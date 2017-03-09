@@ -1,13 +1,14 @@
 
 .archive {
-	header {
+	.archive-title {
 		flex-basis: 100%;
 		justify-content: center;
+		text-align: center;
 	}
-	.wp-post-image {
-	height: 200px;
-	width: 200px;
-	}
+	// .wp-post-image {
+	// height: 200px;
+	// width: 200px;
+	// }
 	#main {
 		display:flex;
 		flex-wrap: wrap;
@@ -15,6 +16,10 @@
 		width: 90%;
 		margin: 0 auto;
 	}
+	.entry-header {
+		// width: 45%;
+	}
+
 	&.post-type-archive-product {
 		article {
 			flex-basis: 23%;
@@ -22,7 +27,7 @@
 	}
 	&.post-type-archive-adventure {
 		article {
-			flex-basis: 50%;
+			flex-basis: 40%;
 		}
 	}
 }
@@ -33,5 +38,24 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.product-type-description {
+	color: grey;
+	text-align: center;
+}
+
+.product-type-container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	border-top: dotted #a1a1a1 2px;
+	padding-top: 10px;
+}
+
+.adventure-title {
+	font-size: 1rem;
+}
+
 
 
