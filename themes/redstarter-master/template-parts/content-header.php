@@ -16,7 +16,8 @@ if ( is_post_type_archive('product') ) { ?>
         
 <?php } elseif ( is_post_type_archive('journal') ) {
            
-}; ?>
+};
+ ?>
     
 
 
