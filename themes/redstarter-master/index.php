@@ -1,3 +1,4 @@
+<h1>this is index.php</h1>
 <?php
 /**
  * The main template file.

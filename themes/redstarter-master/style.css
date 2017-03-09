@@ -222,6 +222,14 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "merri", Courier, serif;
+  src: url("Merriweather-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "novo", Helvetica, sans-serif;
+  src: url("Novecentosanswide-Normal.ttf") format("truetype"); }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -231,7 +239,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -700,7 +708,8 @@ object {
 
 .home-logo {
   margin-left: 30px;
-  height: 35px; }
+  height: 35px;
+  padding-top: 10px; }
 
 ul {
   list-style-type: none; }
@@ -798,7 +807,9 @@ li {
 .section-title {
   text-align: center;
   font-size: 2em;
-  margin: 40px auto; }
+  margin: 40px auto;
+  font-weight: light;
+  font-family: "Merriweather-Light", serif; }
 
 .shop-container {
   display: -ms-flexbox;
@@ -810,8 +821,8 @@ li {
 
 .shop-category {
   text-align: center;
-  border: 1px solid grey;
-  border-top: 5px solid grey;
+  border: 1px solid #a1a1a1;
+  border-top: 5px solid #a1a1a1;
   padding: 8px;
   width: 22%; }
 
@@ -926,9 +937,39 @@ li {
       flex-basis: 50%; }
 
 .product-info-box {
-  border: 1px solid grey;
-  border-top: 5px solid grey;
+  border: 1px solid #a1a1a1;
+  border-top: 3px solid #a1a1a1;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+
+.single-product .product-felx-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.single-product .site-main {
+  max-width: 80rem;
+  margin: 3rem; }
+
+.single-product .product-image {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%; }
+
+.single-product .product-info {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%; }
+
+.single-product .product-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #d99054; }
+
+.single-adventure .post-content {
+  width: 60%;
+  margin: 4rem auto; }
+
+.single-adventure .adventure-title {
+  font-size: 2.5rem; }

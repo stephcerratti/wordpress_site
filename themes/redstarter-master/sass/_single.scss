@@ -1,0 +1,36 @@
+.single-product {
+
+	.product-felx-container {
+	display: flex;
+	justify-content: space-between;
+	// height: 50vh;
+	}
+
+	.site-main {
+		max-width: 80rem;
+		margin: 3rem;
+	}
+
+	.product-image {
+		flex-basis: 45%;
+	}
+	.product-info {
+		flex-basis: 45%;
+	}
+	.product-title {
+		text-transform: uppercase;
+		font-size: 2rem;
+		color: #d99054;
+	}
+}
+
+.single-adventure {
+
+	.post-content {
+		width: 60%;
+		margin: 4rem auto;
+	}
+	.adventure-title {
+		font-size: 2.5rem;
+	}
+}

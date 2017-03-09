@@ -3,7 +3,7 @@
 Template Name: Find Us
 */
 ?>
-<h1>this is contact.php</h1>
+<!-- <h1>this is contact.php</h1> -->
 
 <?php get_header() ?>
 

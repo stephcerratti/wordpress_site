@@ -1,3 +1,4 @@
+<h1> this is archive.php</h1>
 <?php
 /**
  * The template for displaying archive pages.

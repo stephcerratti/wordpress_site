@@ -3,7 +3,7 @@
 Template Name: About
 */
 ?>
-<h1>this is about.php</h1>
+<!-- <h1>this is about.php</h1> -->
 
 <?php get_header() ?>
 

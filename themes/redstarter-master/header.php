@@ -29,7 +29,7 @@
 				$class = "about-banner";
 			}
 
-			elseif (is_home()){
+			elseif (is_front_page()){
 				$class = "home-banner";
 			}
 
@@ -38,7 +38,7 @@
 				<div class="<?php echo $class ?>">
   					<div class= "navbar">
 
-  					<?php if (is_home() || is_page("about")): ?>
+  					<?php if (is_front_page() || is_page("about") || is_single('adventure')): ?>
   						<div class="nav-logo">
     					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="home-logo" alt="Home Logo" src="<?php echo get_bloginfo("stylesheet_directory")?>/images/logos/inhabitent-logo-tent-white.svg"></a>
     					</div>
@@ -50,7 +50,7 @@
 
     				<?php endif ?>
 
-    				<?php if (is_home() || is_page("about")): ?>
+    				<?php if (is_front_page() || is_page("about") || is_single('adventure')): ?>
     					<nav id="site-navigation" class="main-navigation nav-items white-text uppercase navbar" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
