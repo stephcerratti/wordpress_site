@@ -698,7 +698,8 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  border-bottom: 1px solid #a1a1a1; }
 
 .nav-items a {
   color: white; }
@@ -943,6 +944,28 @@ li {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%; }
 
+.adventure-title {
+  font-size: 1rem; }
+
+/**********************SHOP STUFF HEADER *********************/
+.product-type-links {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #a1a1a1; }
+
+.product-type-links a {
+  text-decoration: none;
+  padding: 0px 20px; }
+
+.shop-header {
+  width: 100%; }
+
+.shop-title {
+  margin-bottom: 10px;
+  font-size: 2.5em; }
+
+/**********************SHOP STUFF ITEMS *********************/
 .product-info-box {
   border: 1px solid #a1a1a1;
   border-top: 3px solid #a1a1a1;
@@ -955,6 +978,7 @@ li {
   color: grey;
   text-align: center; }
 
+/**********************PRODUCT TYPE ARCHIVE *********************/
 .product-type-container {
   width: 80%;
   margin: 0 auto;
@@ -964,9 +988,6 @@ li {
       justify-content: space-around;
   border-top: dotted #a1a1a1 2px;
   padding-top: 10px; }
-
-.adventure-title {
-  font-size: 1rem; }
 
 .single-product .product-felx-container {
   display: -ms-flexbox;

@@ -1,16 +1,14 @@
 <?php if ( is_archive() ) { ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
-				
-				<?php if ( has_post_thumbnail() ) : ?>
-					<a href="<?php echo get_permalink()?>">
-					<div class="product-image">
-					 <?php the_post_thumbnail( 'small' ); ?>
-					</div>
-					</a>
-
-				<?php endif; ?>
+		<header class="entry-header">	
+			<?php if ( has_post_thumbnail() ) : ?>
+				<a href="<?php echo get_permalink()?>">
+				<div class="product-image">
+					<?php the_post_thumbnail( 'small' ); ?>
+				</div>
+				</a>
+			<?php endif; ?>
 			
 			<div class="product-info-box">
 				<?php echo get_the_title() ?>
@@ -36,9 +34,6 @@
 					<?php the_content(); ?>
 				</div>
 		</header>
-		
-		<!-- </div> -->
-		
 	</article>
 
 <?php }  ?>

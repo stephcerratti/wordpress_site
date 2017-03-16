@@ -59,7 +59,7 @@
   					</div>
 
   					<?php else: ?>
-    					<nav id="site-navigation" class="main-navigation  green-text uppercase navbar" role="navigation">
+    					<nav id="site-navigation" class="main-navigation  green-text uppercase grey-line" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						<!-- <i class="fa fa-search" aria-hidden="true"></i> -->
